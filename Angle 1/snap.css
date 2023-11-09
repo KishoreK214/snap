@@ -6,21 +6,20 @@
 body{
     background-color:yellow;
     font-family: sans-serif;
-    padding-top: 40px;
+    padding-top: 4vw;
 }
 .headleft{
     display: flex;
 }
 .right{
     max-width: 30%;
-    margin-left: 60px;
+    margin-left: 5vw;
 }
 .heading{
     
     font-weight: 540;
-    max-width: 435px;
-    font-size: 64px;
-    line-height: 86px;
+    font-size: 5vw;
+    line-height: 6vw;
     flex: 1;
 }
 .container{
@@ -29,11 +28,11 @@ body{
     align-items: center;
 }
 p{
-    font-size: 28px;
+    font-size: 2vw;
 }
 .search-button{
-    border-radius: 40px;
-    padding: 10px 30px  10px 40px ;
+    border-radius: 4vw;
+    padding: 1.2vw 1.5vw 10px 40px ;
     width: 100px;
     margin-top: 15px;
     border: none;
@@ -118,8 +117,7 @@ button{
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 14px;
-    margin-bottom: 50px;
-    margin-top: 0;
+    margin-bottom: 0;
     z-index: 100;
 
 }
@@ -132,7 +130,7 @@ span{
     position:relative;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 24vw;
 
 }
 .login{
@@ -162,8 +160,70 @@ footer{
 }
 .lowerpart{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     background-color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 4.5vw;
+    padding-bottom: 4vw;
 }
+@media (max-width:600px) {
+    body{
+        padding-top: 90px;
+    }
+    .search-button{
+        border-radius: 4vw;
+        padding: 1.2vw 1.5vw 10px 40px ;
+        width: 200px;
+        margin-top: 23px;
+        border: none;
+    }
+
+    .right{
+        max-width: 100%;
+    }
+    .heading{
+        text-align: center;
+        font-weight: 700;
+        font-size: 8.5vw;
+        line-height: 10vw;
+        padding: 30px 20px;
+    }
+    p{
+        font-size: 5vw;
+        text-align: center;
+    }
+    .container{
+        display: block;
+     }
+     .login{
+        height: 80px;
+        width: 350px;
+        font-weight: 800;
+        margin: 0;
+     }
+     .lowerpart{
+        display: grid;
+        max-width: 100%;
+        padding-bottom: 73px;
+     }
+     button{
+        font-size: 26px;
+        align-items: center;
+     }
+     .middle,.headright{
+        display: none;
+     }
+     .image{
+        max-width: 98%;
+     }
+     .fotter{
+        background-color: black;
+        text-align: center;
+        color: white;
+        font-weight: 650;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 14px;
+        margin-bottom: 0px;
+        z-index: 100;
+     }
+} 
